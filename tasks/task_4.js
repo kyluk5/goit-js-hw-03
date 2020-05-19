@@ -2,16 +2,13 @@
 
 const countTotalSalary = function (employees) {
     // твой код
-    employees.default = 0;
+
     let totalSalary = 0;
     for (let employee in employees) {
-
         let salary = employees[employee];
-
         if (salary >= 0) {
             totalSalary += salary;
         }
-
     }
     return totalSalary;
 };
